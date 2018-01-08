@@ -1,0 +1,7 @@
+---
+Name: logviewerconfig
+---
+SilverStripe\Core\Injector\Injector:
+  Psr\Log\LoggerInterface:
+    calls:
+      AddDataObjectHandler: [ pushHandler, [ %$SilverLeague\LogViewer\Handler\DataObjectHandler ] ]
